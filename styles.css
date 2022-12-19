@@ -3,7 +3,156 @@
     padding: 0;
     box-sizing: border-box;
   }
-
-body{
-    background-color: #000000;
-}
+  
+  .hero {
+    background-image: url(images/tattoo_cover.webp);
+    height: 100vh;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: static;
+  }
+  
+  .container {
+    width: 100%;
+    padding: 20px;
+    color: white;
+  }
+  
+  footer {
+    background-color: #313131;
+  }
+  
+  
+  /*Font*/
+  .nav-text {}
+  
+  .headers {
+    font-size: clamp(1.375rem, 0.562rem + 2vw, 2.188rem);
+  }
+  
+  .sub-headers {
+    font-size: clamp(1.125rem, 0.687rem + 1vw, 1.563rem);
+  }
+  
+  .text {
+    font-size: clamp(1rem, .625rem + 1vw, 1.375rem);
+  }
+  
+  .sub-text {
+    font-size: .75rem
+  }
+  
+  
+  /*Navigation Bar*/
+  .navbar {
+    background-color: #262626;
+    overflow: hidden;
+    height: 80px;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .navlogo {
+    width: 70px;
+    height: auto;
+    padding: 5px;
+  }
+  
+  .navbar a {
+    color: #ffffff;
+    text-align: center;
+    padding: 17px 20px;
+    font-size: clamp(1rem, 0.7500rem + 0.6667vw, 1.25rem);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .navbar ul {
+    margin: 0;
+    list-style: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(1rem, 0.7500rem + 0.6667vw, 1.25rem);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  .navbar a:hover {
+    color: rgb(231, 23, 23);
+  }
+  
+  #nav-bar {
+    position: fixed;
+    top: -80px;
+    width: 100%;
+    transition: top 0.5s;
+    z-index: 1;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  /*
+  #navbar {
+    background-color: #333;
+    position: fixed;
+    display: inline-flex;
+    align-items: center;
+    top: -80px;
+    width: 100%;
+    transition: top 0.3s;
+  }
+  
+  #navbar a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  */
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .container {
+      background: red;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .container {
+      background: green;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .container {
+      background: blue;
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .container {
+      background: orange;
+    }
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .container {
+      background: pink;
+    }
+  
+  }
