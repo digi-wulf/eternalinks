@@ -25,9 +25,7 @@
   }
   
   
-  /*Font*/
-  .nav-text {}
-  
+  /*Font*/  
   .headers {
     font-size: clamp(1.375rem, 0.562rem + 2vw, 2.188rem);
   }
@@ -50,8 +48,9 @@
     background-color: #262626;
     overflow: hidden;
     height: 80px;
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    justify-content: center;
   }
   
   .navlogo {
@@ -89,42 +88,88 @@
     width: 100%;
     transition: top 0.5s;
     z-index: 1;
+    justify-content: space-between;
   }
   
   .navbar-nav {
     display: flex;
     align-items: center;
   }
-  
-  /*
-  #navbar {
-    background-color: #333;
-    position: fixed;
-    display: inline-flex;
+
+  /*  Side Navigation  */
+.open-slide{
+    display: none;
     align-items: center;
-    top: -80px;
-    width: 100%;
-    transition: top 0.3s;
-  }
-  
-  #navbar a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 15px;
-    text-decoration: none;
+}
+
+.nav-menu{
+    vertical-align: middle;
+}
+
+.side-nav{
+    display: none;
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-color: #1a1a1a;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+
+    font-family: 'Oswald', sans-serif;
     font-size: 17px;
-  }
-  
-  #navbar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.side-nav a{
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #9c9c9c;
+    display: block;
+    transition: 0.3s;
+}
+.side-nav a:hover{
+    color: #ffffff;
+}
+.side-nav .btn-close{
+    position: absolute;
+    top: 0;
+    margin-right: 50px;
+    font-size: 36px;
+}
+.side-nav-overlay:hover{
+    background-color: rgb(231, 23, 23);
+    border-left: 8px solid #ffffff;
+}
+
+#main{
+    transition: margin-right 0.5s;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
   
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
     .container {
       background: red;
+    }
+    .navbar-nav{
+        display: none;
+    }
+    .open-slide{
+        display: block;
+    }
+    .side-nav{
+        display: block;
+    }
+    #main{
+        text-align: justify;
     }
   }
   
