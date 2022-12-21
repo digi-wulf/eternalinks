@@ -1,203 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .hero {
-    background-image: url(images/tattoo_cover.webp);
-    height: 100vh;
-    width: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: static;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+  padding: 5px;
+}
+
+.hero {
+  background-image: url(images/tattoo_cover.webp);
+  height: 100vh;
+  width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: static;
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+  color: white;
+}
+
+footer {
+  color: #ffffff;
+  background-color: #262626;
+  padding: 30px 0 40px 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(0.875rem, 0.7500rem + 0.3333vw, 1rem);
+}
+
+
+/*Font*/
+.headers {
+  font-size: clamp(1.375rem, 0.562rem + 2vw, 2.188rem);
+}
+
+.sub-headers {
+  font-size: clamp(1.125rem, 0.687rem + 1vw, 1.563rem);
+}
+
+.text {
+  font-size: clamp(1rem, .625rem + 1vw, 1.375rem);
+}
+
+.sub-text {
+  font-size: .75rem
+}
+
+
+/*Navigation Bar*/
+.navbar {
+  background-color: #262626;
+  overflow: hidden;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-align: center;
+  padding: 17px 20px;
+  font-size: clamp(1rem, 0.7500rem + 0.6667vw, 1.25rem);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar ul {
+  margin: 0;
+  list-style: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(1rem, 0.7500rem + 0.6667vw, 1.25rem);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: rgb(231, 23, 23);
+}
+
+#nav-bar {
+  position: fixed;
+  top: -80px;
+  width: 100%;
+  transition: top 0.5s;
+  z-index: 1;
+  justify-content: space-between;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+/*  Side Navigation  */
+.open-slide {
+  display: none;
+  align-items: center;
+}
+
+.nav-menu {
+  vertical-align: middle;
+}
+
+.side-nav {
+  display: none;
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: #1a1a1a;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+
+  font-family: 'Oswald', sans-serif;
+  font-size: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.side-nav a {
+  right: 0;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 1.375rem;
+  color: #9c9c9c;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav a:hover {
+  color: #ffffff;
+}
+
+.side-nav .btn-close {
+  position: absolute;
+  top: 0;
+  font-size: 2.25rem;
+}
+
+.side-nav-overlay:hover {
+  background-color: rgb(231, 23, 23);
+  border-left: 8px solid #ffffff;
+}
+
+#main {
+  transition: margin-right 0.5s;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+
+footer a {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer ul {
+  margin: 0;
+  list-style: none;
+  padding: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 50%;
+  justify-content: space-evenly;
+}
+
+footer a:hover {
+  color: rgb(231, 23, 23);
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  gap: 5px;
+}
+
+.socials {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.ig-logo, .fb-logo {
+  height: clamp(1.875rem, 1.2500rem + 1.6667vw, 2.5rem);
+  width: auto;
+}
+
+.ig-logo {
+  padding-right: clamp(0.938rem, 0.0010rem + 2.4987vw, 1.875rem);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   .container {
-    width: 100%;
-    padding: 20px;
-    color: white;
+    background: red;
   }
-  
-  footer {
-    background-color: #313131;
-  }
-  
-  
-  /*Font*/  
-  .headers {
-    font-size: clamp(1.375rem, 0.562rem + 2vw, 2.188rem);
-  }
-  
-  .sub-headers {
-    font-size: clamp(1.125rem, 0.687rem + 1vw, 1.563rem);
-  }
-  
-  .text {
-    font-size: clamp(1rem, .625rem + 1vw, 1.375rem);
-  }
-  
-  .sub-text {
-    font-size: .75rem
-  }
-  
-  
-  /*Navigation Bar*/
-  .navbar {
-    background-color: #262626;
-    overflow: hidden;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .navlogo {
-    width: 70px;
-    height: auto;
-    padding: 5px;
-  }
-  
-  .navbar a {
-    color: #ffffff;
-    text-align: center;
-    padding: 17px 20px;
-    font-size: clamp(1rem, 0.7500rem + 0.6667vw, 1.25rem);
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  
-  .navbar ul {
-    margin: 0;
-    list-style: none;
-    font-family: 'Oswald', sans-serif;
-    font-size: clamp(1rem, 0.7500rem + 0.6667vw, 1.25rem);
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: 500;
-  }
-  
-  .navbar a:hover {
-    color: rgb(231, 23, 23);
-  }
-  
-  #nav-bar {
-    position: fixed;
-    top: -80px;
-    width: 100%;
-    transition: top 0.5s;
-    z-index: 1;
-    justify-content: space-between;
-  }
-  
+
   .navbar-nav {
-    display: flex;
-    align-items: center;
+    display: none;
   }
 
-  /*  Side Navigation  */
-.open-slide{
-    display: none;
-    align-items: center;
-}
-
-.nav-menu{
-    vertical-align: middle;
-}
-
-.side-nav{
-    display: none;
-    height: 100%;
-    width: 0px;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    right: 0;
-    background-color: #1a1a1a;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
-
-    font-family: 'Oswald', sans-serif;
-    font-size: 17px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-.side-nav a{
-    padding: 10px 30px;
-    text-decoration: none;
-    font-size: 22px;
-    color: #9c9c9c;
+  .open-slide {
     display: block;
-    transition: 0.3s;
-}
-.side-nav a:hover{
-    color: #ffffff;
-}
-.side-nav .btn-close{
-    position: absolute;
-    top: 0;
-    margin-right: 50px;
-    font-size: 36px;
-}
-.side-nav-overlay:hover{
-    background-color: rgb(231, 23, 23);
-    border-left: 8px solid #ffffff;
+  }
+
+  .side-nav {
+    display: block;
+  }
+
+  footer ul {
+    width: 75%;
+  }
+
+  .footer-nav {
+    gap: 5px;
+  }
+
+  .socials {
+    flex-direction: row;
+  }
+
 }
 
-#main{
-    transition: margin-right 0.5s;
-    overflow: hidden;
-    width: 100%;
-    text-align: center;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    background: green;
+  }
 }
-  
-  /* Extra small devices (phones, 600px and down) */
-  @media only screen and (max-width: 600px) {
-    .container {
-      background: red;
-    }
-    .navbar-nav{
-        display: none;
-    }
-    .open-slide{
-        display: block;
-    }
-    .side-nav{
-        display: block;
-    }
-    #main{
-        text-align: justify;
-    }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    background: blue;
   }
-  
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
-    .container {
-      background: green;
-    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    background: orange;
   }
-  
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-    .container {
-      background: blue;
-    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    background: pink;
   }
-  
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    .container {
-      background: orange;
-    }
-  }
-  
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    .container {
-      background: pink;
-    }
-  
-  }
+
+}
