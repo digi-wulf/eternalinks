@@ -37,6 +37,17 @@ body {
   position: static;
 }
 
+.hero-secondary {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, .5) 30%, rgba(202, 62, 71, .2)), url(images/tattoo_sleeve.webp);
+  height: 40vh;
+  width: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: static;
+}
+
 .hero-content {
   height: 100vh;
   width: auto;
@@ -86,7 +97,7 @@ body {
   transition: background-color .3s;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: #88292f;
 }
 
@@ -115,14 +126,17 @@ footer {
 /*Font*/
 .headers {
   font-size: clamp(1.375rem, 0.562rem + 2vw, 2.188rem);
+  padding: 15px;
 }
 
 .sub-headers {
   font-size: clamp(1.125rem, 0.687rem + 1vw, 1.563rem);
+  line-height: 150%;
 }
 
 .text {
   font-size: clamp(1rem, .625rem + 1vw, 1.375rem);
+  line-height: 150%;
 }
 
 .sub-text {
@@ -232,6 +246,21 @@ footer {
   overflow: hidden;
   width: 100%;
   text-align: center;
+}
+
+.content {
+  background-color: #88292f;
+  background-image: linear-gradient(#88292f, #621d22);
+  margin: 30px 15px;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 15px 80px 4px;
+}
+
+.welcome-image{
+  width: clamp(18.75rem, 12.5000rem + 16.6667vw, 25rem);
+  height: auto;
+  border-radius: 10px;
 }
 
 footer a {
