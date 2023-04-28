@@ -265,6 +265,7 @@ footer {
   font-size: 2.25rem;
 }
 
+/*  Index Page  */
 #main {
   transition: margin-right 0.5s;
   overflow: hidden;
@@ -297,6 +298,20 @@ footer {
   border-radius: 10px;
 }
 
+.artist-intro{
+  width: 100%;
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #525252;
+  border-radius: 15px;
+}
+
+.artist-pic{
+  width: 40%;
+  padding-bottom: 20px;
+}
+
+/*  Footer  */
 footer a {
   color: #ffffff;
   text-align: center;
