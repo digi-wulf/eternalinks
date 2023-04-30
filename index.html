@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="\images\light_favicon_io\favicon.ico">
     <link rel="stylesheet" href="/styles.css">
+    <script src="lib/jquery-3.6.4.min.js"></script>
     <title>Eternal Inks</title>
 </head>
 
@@ -48,29 +49,30 @@
                     </div>
                 </div>
 
-                <button class="btn text" onclick="window.location.href='/contact.html';">Set
-                    Appointment</button>
+                <button class="btn text" onclick="window.location.href='/contact.html';">Set Appointment</button>
             </div>
         </div>
         <div class="container">
-            <div class="content">
-                <img class="welcome-image" src="/images/tattoo_arm.webp" alt="">
-                <div class="welcome">
-                    <div class="headers">
-                        <h2>Show off!</h2>
-                    </div>
-                    <div class="welcome-text">
-                        <p>
-                            Get something memorable and unforgettable. Big to small, complex to simple, stylized to
-                            realistic. We'll make sure with the tattoo of your dreams!
-                        </p>
-                        <p>
-                            If your new here take a look around and take a look at the work of our artist. See some of
-                            their previous works and styles they have done. Know exactly what you want? Call, text, or
-                            email us! We'll set up a schedual for you at the earliest and most convient time for you!
-                        </p>
-                        <button class="btn text" onclick="window.location.href='/contact.html';">Set
-                            Appointment</button>
+            <div class="welCard">
+                <div class="content">
+                    <img class="welcome-image" src="/images/tattoo_arm.webp" alt="">
+                    <div class="welcome">
+                        <div class="headers">
+                            <h2>Show off!</h2>
+                        </div>
+                        <div class="welcome-text">
+                            <p>
+                                Get something memorable and unforgettable. Big to small, complex to simple, stylized to
+                                realistic. We'll make sure with the tattoo of your dreams!
+                            </p>
+                            <p>
+                                If your new here take a look around and take a look at the work of our artist. See some of
+                                their previous works and styles they have done. Know exactly what you want? Call, text, or
+                                email us! We'll set up a schedual for you at the earliest and most convient time for you!
+                            </p>
+                            <button class="btn text" onclick="window.location.href='/contact.html';">Set
+                                Appointment</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -89,11 +91,19 @@
                     </div>
                     <div class="text">
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore exercitationem illo eos
-                            aspernatur,
-                            veritatis laboriosam quam aperiam sint dolores eaque voluptatum possimus esse vitae
-                            voluptate optio
-                            saepe cumque deserunt voluptates.</p>
-                        <div>test</div>
+                            aspernatur, veritatis laboriosam quam aperiam sint dolores eaque voluptatum possimus esse
+                            vitae voluptate optio saepe cumque deserunt voluptates
+                            <span id="dots1">...</span>
+                        </p>
+                        <div id="displayTxt1">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
+                                exercitationem illo eos aspernatur, veritatis laboriosam quam aperiam sint dolores eaque
+                                voluptatum possimus
+                                esse vitae voluptate optio saepe cumque deserunt voluptates.
+                            </p>
+                        </div>
+                        <button class="btn text" id="txtBtn1" onclick="btnTxtChange1()">Show</button>
                     </div>
                 </div>
                 <div class="artist-intro">
@@ -103,11 +113,19 @@
                     </div>
                     <div class="text">
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore exercitationem illo eos
-                            aspernatur,
-                            veritatis laboriosam quam aperiam sint dolores eaque voluptatum possimus esse vitae
-                            voluptate optio
-                            saepe cumque deserunt voluptates.</p>
-                        <div>test</div>
+                            aspernatur, veritatis laboriosam quam aperiam sint dolores eaque voluptatum possimus esse
+                            vitae voluptate optio saepe cumque deserunt voluptates
+                            <span id="dots2">...</span>
+                        </p>
+                        <div id="displayTxt2">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
+                                exercitationem illo eos aspernatur, veritatis laboriosam quam aperiam sint dolores eaque
+                                voluptatum possimus
+                                esse vitae voluptate optio saepe cumque deserunt voluptates.
+                            </p>
+                        </div>
+                        <button class="btn text" id="txtBtn2" onclick="btnTxtChange2()">Show</button>
                     </div>
                 </div>
                 <div class="artist-intro">
@@ -117,24 +135,20 @@
                     </div>
                     <div class="text">
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore exercitationem illo eos
-                            aspernatur,
-                            veritatis laboriosam quam aperiam sint dolores eaque voluptatum possimus esse vitae
-                            voluptate optio
-                            saepe cumque deserunt voluptates.</p>
-                        <div>test</div>
+                            aspernatur, veritatis laboriosam quam aperiam sint dolores eaque voluptatum possimus esse
+                            vitae voluptate optio saepe cumque deserunt voluptates
+                            <span id="dots3">...</span>
+                        </p>
+                        <div id="displayTxt3">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
+                                exercitationem illo eos aspernatur, veritatis laboriosam quam aperiam sint dolores eaque
+                                voluptatum possimus
+                                esse vitae voluptate optio saepe cumque deserunt voluptates.
+                            </p>
+                        </div>
+                        <button class="btn text" id="txtBtn3" onclick="btnTxtChange3()">Show</button>
                     </div>
-                </div>
-            </div>
-
-            <div class="text">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore exercitationem illo eos aspernatur,
-                    veritatis laboriosam quam aperiam sint dolores eaque voluptatum possimus esse vitae voluptate optio
-                    saepe cumque deserunt voluptates.</p>
-                <div>test</div>
-                <div class="sub-text">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore exercitationem illo eos
-                        aspernatur, veritatis laboriosam quam aperiam sint dolores eaque voluptatum possimus esse vitae
-                        voluptate optio saepe cumque deserunt voluptates.</p>
                 </div>
             </div>
         </div>

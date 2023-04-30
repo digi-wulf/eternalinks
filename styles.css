@@ -118,6 +118,28 @@ body {
   background-color: #88292f;
 }
 
+.artists > .artist-intro .btn{
+  margin-top: 15px;
+  padding: 15px 30px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #CA3E47;
+  border-style: none;
+  border-radius: 5px;
+  transition: background-color .3s;
+}
+.artists > .artist-intro .btn:hover {
+  background-color: #88292f;
+}
+
+.artists > .artist-intro .sub-headers {
+  font-size: clamp(1.125rem, 0.687rem + 1vw, 1.563rem);
+  line-height: 150%;
+  padding-bottom: 20px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -273,37 +295,46 @@ footer {
   text-align: center;
 }
 
-.content {
-  background-color: #88292f;
-  background-image: linear-gradient(#88292f, #621d22);
-  margin: 30px 15px;
-  padding: 30px 10%;
-  border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 15px 80px 4px;
-  width: 100%;
-  height: auto;
-  align-items: center;
-  display: flex;
+.welCard{
+  display:flex;
   flex-direction: column;
 }
 
+.content {
+  background-color: #88292f;
+  background-image: linear-gradient(#88292f, #621d22);
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 15px 80px 4px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+  padding: 40px;
+}
+
 .welcome {
-  margin-top: 20px;
-  margin-right: 0;
+  width: 100%;
+  border-radius: 15px;
 }
 
 .welcome-image {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
+}
+
+#more {display: none;}
+
+.artists{
+  display:flex;
+  flex-direction: column;
 }
 
 .artist-intro{
   width: 100%;
   margin: 30px 0;
-  padding: 20px;
+  padding: 40px;
   background-color: #525252;
   border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 15px 80px 4px;
 }
 
 .artist-pic{
@@ -399,9 +430,9 @@ footer a:hover {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .container {
+  /* .container {
     background: green;
-  }
+  } */
   .content {
     padding: 8% 10%;
   }
@@ -410,34 +441,37 @@ footer a:hover {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .container {
+  /* .container {
     background: blue;
-  }
+  } */
   
-  .content {
+  .content{
     flex-direction: row-reverse;
-    margin: 20px 30px;
+    padding: 40px;
+  }
+
+  .welcome{
+    width: 60%;
+    padding: 0 40px 0 0;
+  }
+
+  .welcome-image{
+    width: 40%;
+  }
   
-    width: 95%;
-    padding: 40px 40px;
+  #dots1, #dots2, #dots3, #txtBtn1, #txtBtn2, #txtBtn3{
+    display:none !important;
   }
-
-  .welcome {
-    flex: 60%;
-    margin-right: 20px;
-  }
-
-  .welcome-image {
-    width: 16.75rem;
-    flex: 30%;
+  #displayTxt1, #displayTxt2, #displayTxt3{
+    display: inline !important;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .container {
+  /* .container {
     background: orange;
-  }
+  } */
 
   .hero {
     flex-direction: row;
@@ -447,19 +481,38 @@ footer a:hover {
   .hero-content {
     width: 100vh;
   }
-
-  .hero-logo {}
-
-  .hero-text {}
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .container {
+  /* .container {
     background: pink;
-  }
-  .content{
+  } */
+
+  .welCard{
     width: 70%;
+  }
+
+  .welcome{
+    width: 80%;
+    padding: 0 40px 0 0;
+  }
+
+  .welcome-image{
+    width: 40%;
+  }
+
+  .artists{
+    flex-direction: row;
+  }
+  .artist-intro{
+    width: 100%;
+    margin: 30px;
+    padding: 40px;
+  }
+  
+  .artist-pic{
+    width: 60%;
+    padding-bottom: 20px;
   }
 }
