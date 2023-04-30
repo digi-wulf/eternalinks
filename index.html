@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="\images\light_favicon_io\favicon.ico">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="lib/jquery-3.6.4.min.js"></script>
+    <title>Eternal Inks</title>
+</head>
+
+<body>
+    <nav class="navbar" id="nav-bar">
+        <a href="#">
+            <img class="logo" src="/images/Eternal_Inks_Logo.png" alt="Eternal Inks">
+        </a>
+
+        <ul class="navbar-nav">
+            <li><a href="#crew">The Crew</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <div class="open-slide">
+            <a>
+                <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="5 5 14 14" width="50px" fill="#FFFFFF"
+                    onclick="openSlideMenu();">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <div id="side-menu" class="side-nav" onclick="closeSideMenu()">
+        <a class="btn-close">&times;</a>
+        <a href="#crew">The Crew</a>
+        <a href="#about">About</a>
+        <a href="/contact.html">Contact</a>
+    </div>
+    <div id="main">
+        <div class="hero">
+            <div class="hero-content">
+                <div class="title">
+                    <img class="hero-logo" src="/images/Eternal_Inks_Logo.png" alt="Eternal Inks Hero Logo">
+                    <div class="hero-text">
+                        <h1>Eternal<br>Inks</h1>
+                    </div>
+                </div>
+
+                <button class="btn text" onclick="window.location.href='/contact.html';">Set Appointment</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="welCard">
+                <div class="content">
+                    <img class="welcome-image" src="/images/tattoo_arm.webp" alt="">
+                    <div class="welcome">
+                        <div class="headers">
+                            <h2>Show off!</h2>
+                        </div>
+                        <div class="welcome-text">
+                            <p>
+                                Get something memorable and unforgettable. Big to small, complex to simple, stylized to
+                                realistic. We'll make sure with the tattoo of your dreams!
+                            </p>
+                            <p>
+                                If your new here take a look around and take a look at the work of our artist. See some of
+                                their previous works and styles they have done. Know exactly what you want? Call, text, or
+                                email us! We'll set up a schedual for you at the earliest and most convient time for you!
+                            </p>
+                            <button class="btn text" onclick="window.location.href='/contact.html';">Set
+                                Appointment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="headers">
+                <h1>Test</h1>
+                <div class="sub-headers">
+                    <h1>Test</h1>
+                </div>
+            </div>
+
+            <div class="artists">
+                <div class="artist-intro">
+                    <img class="artist-pic" src="/images/tattoo_artist1_head.webp" alt="">
+                    <div class="sub-headers">
+                        <h1>Test</h1>
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore exercitationem illo eos
+                            aspernatur, veritatis laboriosam quam aperiam sint dolores eaque voluptatum possimus esse
+                            vitae voluptate optio saepe cumque deserunt voluptates
+                            <span id="dots1">...</span>
+                        </p>
+                        <div id="displayTxt1">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
+                                exercitationem illo eos aspernatur, veritatis laboriosam quam aperiam sint dolores eaque
+                                voluptatum possimus
+                                esse vitae voluptate optio saepe cumque deserunt voluptates.
+                            </p>
+                        </div>
+                        <button class="btn text" id="txtBtn1" onclick="btnTxtChange1()">Show</button>
+                    </div>
+                </div>
+                <div class="artist-intro">
+                    <img class="artist-pic" src="/images/tattoo_artist2_head.webp" alt="">
+                    <div class="sub-headers">
+                        <h1>Test</h1>
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore exercitationem illo eos
+                            aspernatur, veritatis laboriosam quam aperiam sint dolores eaque voluptatum possimus esse
+                            vitae voluptate optio saepe cumque deserunt voluptates
+                            <span id="dots2">...</span>
+                        </p>
+                        <div id="displayTxt2">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
+                                exercitationem illo eos aspernatur, veritatis laboriosam quam aperiam sint dolores eaque
+                                voluptatum possimus
+                                esse vitae voluptate optio saepe cumque deserunt voluptates.
+                            </p>
+                        </div>
+                        <button class="btn text" id="txtBtn2" onclick="btnTxtChange2()">Show</button>
+                    </div>
+                </div>
+                <div class="artist-intro">
+                    <img class="artist-pic" src="/images/tattoo_artist3_head.webp" alt="">
+                    <div class="sub-headers">
+                        <h1>Test</h1>
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore exercitationem illo eos
+                            aspernatur, veritatis laboriosam quam aperiam sint dolores eaque voluptatum possimus esse
+                            vitae voluptate optio saepe cumque deserunt voluptates
+                            <span id="dots3">...</span>
+                        </p>
+                        <div id="displayTxt3">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
+                                exercitationem illo eos aspernatur, veritatis laboriosam quam aperiam sint dolores eaque
+                                voluptatum possimus
+                                esse vitae voluptate optio saepe cumque deserunt voluptates.
+                            </p>
+                        </div>
+                        <button class="btn text" id="txtBtn3" onclick="btnTxtChange3()">Show</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-secondary">
+
+        </div>
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec tellus tellus. Sed pellentesque,
+                lacus eget hendrerit finibus, dolor diam laoreet lectus, a ultricies lacus risus eget dui. Aliquam
+                convallis pharetra odio, id euismod dolor sollicitudin vel. Mauris blandit, dolor eu ullamcorper
+                venenatis, ex velit venenatis odio, nec vestibulum nisl metus eget nulla. Sed accumsan sollicitudin
+                rhoncus. Praesent ac varius arcu. Integer in sagittis elit. Quisque a massa rutrum, cursus augue
+                quis, finibus leo. Nunc tristique purus at euismod porta. Sed tincidunt pulvinar augue, eget
+                bibendum risus volutpat at. Donec nec sem in risus bibendum semper tincidunt eu massa. Ut nisl
+                sapien, elementum eget mauris non, bibendum scelerisque velit. Cras ligula quam, scelerisque
+                dignissim dui at, faucibus commodo odio.</p>
+            <p>Nullam tincidunt sed odio a lacinia. Etiam eu risus semper, lacinia magna vulputate, porttitor felis.
+                Etiam ac semper justo. Phasellus posuere ullamcorper venenatis. Fusce mattis nulla eget aliquet
+                lacinia. Donec id dapibus elit. Integer vitae libero quam. Sed tellus magna, venenatis at enim eu,
+                consectetur elementum nisi. Aenean efficitur purus pellentesque ipsum venenatis condimentum. Proin
+                auctor, elit consectetur suscipit hendrerit, nisi erat condimentum leo, sit amet porttitor tortor
+                ligula sagittis lorem. Nam euismod, augue et lobortis tincidunt, erat lorem bibendum dolor, quis
+                varius leo odio et dui. Donec suscipit ipsum sed massa maximus tempor.</p>
+            <p>Nullam tempor, augue ac commodo elementum, ligula nunc interdum metus, a facilisis nisi purus eu
+                nunc. Nam in diam in libero condimentum eleifend eget non risus. Vestibulum neque felis, tempor
+                ultricies nibh vel, feugiat tincidunt arcu. Aliquam sed felis mattis, imperdiet nunc sodales,
+                interdum tortor. Morbi a ex sodales, euismod diam eget, hendrerit magna. Maecenas ante purus, ornare
+                sit amet quam eget, ornare hendrerit libero. Donec vulputate arcu nec tempus pulvinar. Donec
+                ullamcorper faucibus diam, id rutrum diam porta in. Praesent quis rutrum sem. Donec hendrerit tortor
+                vitae nisl suscipit auctor.</p>
+            <p>Aenean non orci nibh. Aliquam malesuada nisl vitae ligula tristique tristique. Aliquam sodales dui
+                nulla, a bibendum ex lobortis in. Praesent a eleifend est, et lacinia nisi. Aenean vulputate purus
+                quis vulputate congue. Sed sollicitudin vel velit eu pellentesque. Fusce semper enim eget eleifend
+                vehicula. Fusce sit amet magna libero. Donec fermentum eu diam vitae iaculis. Quisque sed urna odio.
+                Pellentesque vel risus commodo, consectetur risus id, iaculis nunc. Nulla vitae quam id nibh posuere
+                tristique.</p>
+            <p>Aliquam eu posuere odio. Cras pulvinar at nibh in euismod. Sed pharetra faucibus consequat. Etiam
+                facilisis porta nisi, in vehicula tellus varius non. Mauris dignissim leo vel nibh auctor, eget
+                convallis augue mollis. Nam cursus nunc id maximus ornare. Mauris vel leo non erat consectetur
+                tempor non a libero. Nunc nec dolor et ipsum dictum mattis. Donec risus sem, lobortis nec eros sed,
+                mollis lacinia metus. Vestibulum condimentum cursus laoreet. Suspendisse tempus enim justo, at
+                laoreet diam facilisis ac.</p>
+        </div>
+    </div>
+
+    <footer>
+        <a href="#">
+            <img class="footer-logo" src="/images/Eternal_Inks_Logo.png" alt="Eternal Inks">
+        </a>
+        <ul class="footer-nav">
+            <li><a href="#crew">The Crew</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+
+        <div class="info">
+            <div class="contact">
+                <p>
+                    555-123-4890<br />
+                    INFO@ETERNALINKS.COM<br />
+                    123 MAIN STREET<br />
+                    HOUSTON, TX 77010
+                </p>
+            </div>
+            <div class="socials">
+                <a href="https://www.instagram.com/"><img class="ig-logo" src="/images/ig_logo.png"
+                        alt="Instagram logo"></a>
+                <a href="https://www.facebook.com/"><img class="fb-logo" src="/images/fb_logo.png"
+                        alt="Facebook logo"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

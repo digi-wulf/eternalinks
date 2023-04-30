@@ -1,9 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #313131;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  padding: 6px;
+}
+
+.footer-logo {
+  width: 70px;
+  height: auto;
+  padding: 6px;
+}
+
+.hero {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, .5) 30%, rgba(202, 62, 71, .2)), url(images/tattoo_cover.webp);
+  height: 100vh;
+  width: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: static;
+}
+
+.hero-secondary {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, .5) 30%, rgba(202, 62, 71, .2)), url(images/tattoo_sleeve.webp);
+  height: 40vh;
+  width: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: static;
+}
+
+.hero-content {
+  height: 100vh;
+  width: auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.hero-logo {
+  height: auto;
+  width: clamp(9.375rem, 0.0000rem + 25.0000vw, 18.75rem);
+  padding-right: 30px;
+  margin-left: clamp(0rem, -6.2500rem + 16.6667vw, 6.25rem);
+}
+
+.hero-text {
+  text-align: left;
+  color: #fff;
+  font-size: clamp(1.563rem, 0.1260rem + 3.8320vw, 3rem);
+  font-family: 'Rowdies', cursive;
+
+  border-left-color: rgb(255, 255, 255);
+  border-left-style: double;
+  border-left-width: 20px;
+  padding: 40px 0 40px 30px;
+  margin: 0;
+}
+
+.btn {
+  margin-top: clamp(9.375rem, 7.4013rem + 5.2632vw, 15.625rem);
+  padding: 15px 30px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #CA3E47;
+  border-style: none;
+  border-radius: 5px;
+  transition: background-color .3s;
+}
+
+.btn:hover {
+  background-color: #88292f;
+}
+
+.welcome > .welcome-text .btn{
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #CA3E47;
+  border-style: none;
+  border-radius: 5px;
+  transition: background-color .3s;
+}
+.welcome > .welcome-text .btn:hover {
+  background-color: #88292f;
+}
+
+.artists > .artist-intro .btn{
+  margin-top: 15px;
+  padding: 15px 30px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #CA3E47;
+  border-style: none;
+  border-radius: 5px;
+  transition: background-color .3s;
+}
+.artists > .artist-intro .btn:hover {
+  background-color: #88292f;
+}
+
+.artists > .artist-intro .sub-headers {
+  font-size: clamp(1.125rem, 0.687rem + 1vw, 1.563rem);
+  line-height: 150%;
+  padding-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3% 10%;
+  color: white;
+}
+
+footer {
+  color: #ffffff;
+  background-color: #1b1b1b;
+  padding: 20px 0 40px 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(0.875rem, 0.7500rem + 0.3333vw, 1rem);
+}
+
+
+/*Font*/
+.headers {
+  font-size: clamp(1.375rem, 0.562rem + 2vw, 2.188rem);
+  padding: 15px;
+}
+
+.sub-headers {
+  font-size: clamp(1.125rem, 0.687rem + 1vw, 1.563rem);
+  line-height: 150%;
+}
+
+.text {
+  font-size: clamp(1.125rem, 0.687rem + 1vw, 1.125rem);
+  line-height: 150%;
+}
+
+.welcome-text {
+  font-size: clamp(0.75rem, 0.5rem + 0.667vw, 1rem)
+  line-height: 150%;
+}
+
+.sub-text {
+  font-size: .75rem
+}
+
+
+/*Navigation Bar*/
+.navbar {
+  background-color: #1b1b1b;
+  overflow: hidden;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-align: center;
+  padding: 17px 20px;
+  font-size: clamp(1rem, 0.7500rem + 0.6667vw, 1.25rem);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar ul {
+  margin: 0;
+  list-style: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(1rem, 0.7500rem + 0.6667vw, 1.25rem);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: rgb(231, 23, 23);
+}
+
+#nav-bar {
+  position: fixed;
+  top: -80px;
+  width: 100%;
+  transition: top 0.5s;
+  z-index: 1;
+  justify-content: space-between;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+/*  Side Navigation  */
+.open-slide {
+  display: none;
+  align-items: center;
+}
+
+.nav-menu {
+  vertical-align: middle;
+}
+
+.side-nav {
+  display: none;
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: #313131;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+
+  font-family: 'Oswald', sans-serif;
+  font-size: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.side-nav a {
+  right: 0;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 1.375rem;
+  color: #9c9c9c;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav a:hover {
+  color: #CA3E47;
+}
+
+.side-nav .btn-close {
+  position: absolute;
+  top: 0;
+  font-size: 2.25rem;
+}
+
+/*  Index Page  */
+#main {
+  transition: margin-right 0.5s;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+
+.welCard{
+  display:flex;
+  flex-direction: column;
+}
+
+.content {
+  background-color: #88292f;
+  background-image: linear-gradient(#88292f, #621d22);
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 15px 80px 4px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+  padding: 40px;
+}
+
+.welcome {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.welcome-image {
+  width: 100%;
+}
+
+#more {display: none;}
+
+.artists{
+  display:flex;
+  flex-direction: column;
+}
+
+.artist-intro{
+  width: 100%;
+  margin: 30px 0;
+  padding: 40px;
+  background-color: #525252;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 15px 80px 4px;
+}
+
+.artist-pic{
+  width: 40%;
+  padding-bottom: 20px;
+}
+
+/*  Footer  */
+footer a {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer ul {
+  list-style: none;
+  padding: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 50%;
+  justify-content: space-evenly;
+}
+
+footer a:hover {
+  color: #CA3E47;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  gap: 5px;
+}
+
+.socials {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.ig-logo,
+.fb-logo {
+  height: clamp(1.875rem, 1.2500rem + 1.6667vw, 2.5rem);
+  width: auto;
+}
+
+.ig-logo {
+  padding-right: clamp(0.938rem, 0.0010rem + 2.4987vw, 1.875rem);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {}
+
+  .navbar-nav {
+    display: none;
   }
 
-body{
-    background-color: #000000;
+  .open-slide {
+    display: block;
+  }
+
+  .side-nav {
+    display: block;
+  }
+
+  footer ul {
+    width: 75%;
+  }
+
+  .footer-nav {
+    gap: 5px;
+  }
+
+  .socials {
+    flex-direction: row;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* .container {
+    background: green;
+  } */
+  .content {
+    padding: 8% 10%;
+  }
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* .container {
+    background: blue;
+  } */
+  
+  .content{
+    flex-direction: row-reverse;
+    padding: 40px;
+  }
+
+  .welcome{
+    width: 60%;
+    padding: 0 40px 0 0;
+  }
+
+  .welcome-image{
+    width: 40%;
+  }
+  
+  #dots1, #dots2, #dots3, #txtBtn1, #txtBtn2, #txtBtn3{
+    display:none !important;
+  }
+  #displayTxt1, #displayTxt2, #displayTxt3{
+    display: inline !important;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* .container {
+    background: orange;
+  } */
+
+  .hero {
+    flex-direction: row;
+
+  }
+
+  .hero-content {
+    width: 100vh;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* .container {
+    background: pink;
+  } */
+
+  .welCard{
+    width: 70%;
+  }
+
+  .welcome{
+    width: 80%;
+    padding: 0 40px 0 0;
+  }
+
+  .welcome-image{
+    width: 40%;
+  }
+
+  .artists{
+    flex-direction: row;
+  }
+  .artist-intro{
+    width: 100%;
+    margin: 30px;
+    padding: 40px;
+  }
+  
+  .artist-pic{
+    width: 60%;
+    padding-bottom: 20px;
+  }
 }
